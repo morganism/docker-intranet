@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: gollum-ingress
+spec:
+  rules:
+  - host: intranet.home.sziraki.co.uk
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: gollum-service
+            port:
+              number: 80
+

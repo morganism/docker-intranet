@@ -1,0 +1,2 @@
+kubectl apply -f gollum-deployment.yaml
+kubectl apply -f gollum-service.yaml

@@ -11,6 +11,8 @@ RUN apt-get update && apt-get install -y \
     libicu-dev \
     zlib1g-dev \
     libsqlite3-dev \
+    ruby-bundler \
+    ruby-dev \
     nodejs
 
 # Clone the Gollum repository
